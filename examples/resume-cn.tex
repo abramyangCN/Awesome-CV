@@ -13,12 +13,11 @@
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
 
-
 %-------------------------------------------------------------------------------
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, a4paper, cn]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -41,9 +40,8 @@
 % \definecolor{lighttext}{HTML}{999999}
 
 % Set false if you don't want to highlight section with awesome color
-% \setbool{acvSectionColorHighlight}{true}
-% \setbool{acvSectionColorHighlightCN}{false}
-
+\setbool{acvSectionColorHighlight}{false}
+\setbool{acvSectionColorHighlightCN}{true}
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
@@ -54,9 +52,9 @@
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
 \photo[circle,noedge,right]{logo-freespeechblue-small}
-\name{Abraham}{Yang}
-\position{Senior Software Engineer{\enskip\cdotp\enskip}Frontend Leader}
-\address{Lane 3885, Qixin Road, Minhang, Shanghai, China}
+\name{Abraham}{Yang 杨杨}
+\position{高级前端开发工程师{\enskip\cdotp\enskip}Frontend Leader}
+\address{上海市闵行区七莘路3885弄}
 
 \mobile{(+86) 159-2109-8538}
 \email{abram.yang@outlook.com}
@@ -96,17 +94,17 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/en/summary.tex}
-\input{resume/en/skills.tex}
-\input{resume/en/employment.tex}
-\input{resume/en/education.tex}
-\input{resume/en/projects.tex}
-\input{resume/en/hobbies.tex}
-% \input{resume/en/honors.tex}
-% \input{resume/en/presentation.tex}
-% \input{resume/en/writing.tex}
-% \input{resume/en/committees.tex}
-% \input{resume/en/extracurricular.tex}
+\input{resume/cn/summary.tex}
+\input{resume/cn/skills.tex}
+\input{resume/cn/employment.tex}
+\input{resume/cn/education.tex}
+\input{resume/cn/projects.tex}
+\input{resume/cn/hobbies.tex}
+% \input{resume/cn/honors.tex}
+% \input{resume/cn/presentation.tex}
+% \input{resume/cn/writing.tex}
+% \input{resume/cn/committees.tex}
+% \input{resume/cn/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
