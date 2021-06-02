@@ -2,14 +2,15 @@
 %!TEX encoding = UTF-8 Unicode
 % Awesome CV LaTeX Template for CV/Resume
 %
-% Author:
+% Authors:
 % Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
 % Editor:
 % Abraham Yang <abram.yang@outlook.com>
 % 
 % Forked from:
 % https://github.com/posquit0/Awesome-CV
-% 
+%
 % Template license:
 % CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
 %
@@ -18,7 +19,7 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper, cn, resume]{awesome-cv}
+\documentclass[11pt, a4paper, cn, cv]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -39,7 +40,7 @@
 % awesome-darknight
 % awesome-freespeechblue
 
-\colorlet{awesome}{awesome-freespeechblue}
+\colorlet{awesome}{awesome-darkgray}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{3f51b5}
 
@@ -62,7 +63,7 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-\photo[circle,noedge,right]{images/logo-freespeechblue-small}
+% \photo[circle,noedge,right]{logo-freespeechblue-small}
 \name{Abraham}{Yang 杨杨}
 \position{高级前端开发工程师{\enskip\cdotp\enskip}Frontend Leader}
 \address{上海市闵行区七莘路}
@@ -97,7 +98,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Abraham Yang~~~·~~~Résumé}
+  {Abraham Yang~~~·~~~CV}
   {\thepage}
 
 
@@ -105,17 +106,18 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{resume/cn/summary.tex}
-\input{resume/cn/skills.tex}
-\input{resume/cn/employment.tex}
-\input{resume/cn/education.tex}
-\input{resume/cn/projects.tex}
-\input{resume/cn/hobbies.tex}
-% \input{resume/cn/honors.tex}
-% \input{resume/cn/presentation.tex}
-% \input{resume/cn/writing.tex}
-% \input{resume/cn/committees.tex}
-% \input{resume/cn/extracurricular.tex}
+\input{cv/cn/summary.tex}
+\input{cv/cn/skills.tex}
+\input{cv/cn/employment.tex}
+\input{cv/cn/education.tex}
+\input{cv/cn/hobbies.tex}
+\pagebreak
+\input{cv/cn/projects.tex}
+% \input{cv/cn/honors.tex}
+% \input{cv/cn/presentation.tex}
+% \input{cv/cn/writing.tex}
+% \input{cv/cn/committees.tex}
+% \input{cv/cn/extracurricular.tex}
 
 
 %-------------------------------------------------------------------------------
