@@ -1,13 +1,14 @@
 %% Start of file `awesome-cv.cls'.
 % Awesome CV Class File
 %
-% This class has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
 % Author:
 % Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
+% Editor:
+% Abraham Yang <abram.yang@outlook.com>
+% 
+% Forked from:
+% https://github.com/posquit0/Awesome-CV
+% 
 % Notes:
 % 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).
 % 2) It has been written in such a way that under most circumstances you
@@ -89,17 +90,25 @@
 
 % \RequirePackage{ctex}
 
-\@ifclasswith{awesome-cv}{cn}{
-  \RequirePackage{ctex}
-  % Decrease line space
-  % \renewcommand{\baselinestretch}{1.0}
-  \setstretch{1.02}
+
+\@ifclasswith{awesome-cv}{resume}{
+    \setstretch{0.96}
+    % % Needed to deal emoji
+    \RequirePackage{emoji}
+    % \setemojifont{TwemojiMozilla}
 }
 
-\setstretch{1.0}
+\@ifclasswith{awesome-cv}{cn}{
+    \RequirePackage{ctex}
+    % Decrease line space
+    % \renewcommand{\baselinestretch}{1.0}
+    \setstretch{1.02}
+}
 
-% % Needed to deal emoji
-\RequirePackage{emoji}
+
+\@ifclasswith{awesome-cv}{cv}{
+    \setstretch{1.25}
+}
 
 \hypersetup{%
   pdftitle={},
@@ -155,6 +164,7 @@
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
 % Awesome colors
+\definecolor{awesome-darkgray}{HTML}{333333}
 \definecolor{awesome-emerald}{HTML}{00A388}
 \definecolor{awesome-skyblue}{HTML}{0395DE}
 \definecolor{awesome-red}{HTML}{DC3522}
